@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+    <body>
+      <ul></ul>
+            First name:<br>
+            <input type="text" id="firstName"><br>
+            Last name:<br>
+            <input type="text" id="lastName"><br><br>
+            <button id="inputBtn" onclick="inputKlik()">Input</button>
+
+            
+
+            <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#config-web-app -->
+            
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyALwRnm_9TL54vk70re_hAtw__hnVtlCy8",
+                authDomain: "belajar-firebase-310c1.firebaseapp.com",
+                databaseURL: "https://belajar-firebase-310c1.firebaseio.com",
+                projectId: "belajar-firebase-310c1",
+                storageBucket: "",
+                messagingSenderId: "426640082513",
+                appId: "1:426640082513:web:65f832c7c1064769"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+            </script>
+
+          
+          <script src="index.js">
+          //script ini harus setelah firebase
+
+
+          </script>
+          <table id="table" border="3 px">
+            
+          </table>
+    </body>
+</html> 
